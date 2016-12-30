@@ -1,0 +1,50 @@
+## global ##
+app.name=ivms
+app.description=${app.name} is a fof application
+endpoints.shutdown.enabled=false
+
+## mongodb ##
+mongo.ivm.name=ivm
+mongo.ivm.host=localhost
+mongo.ivm.username=prosnav
+mongo.ivm.password=prosnav
+
+## server settings ##
+server.port=8084
+server.address=
+server.sessionTimeout=86400
+server.context-path=/ivms
+server.servlet-path=
+
+# REDIS (RedisProperties)
+spring.redis.host=localhost
+spring.redis.port=6379
+spring.redis.pool.max-idle=8
+spring.redis.pool.min-idle=0
+spring.redis.pool.max-active=8
+spring.redis.pool.max-wait=-1
+
+#file upload
+multipart.maxFileSize=102400KB
+multipart.maxRequestSize=102400KB
+file.upload.dir=/var/www/ivms/upload
+
+#logging
+logging.path=/var/log/ivm
+logging.file=ivms.log
+
+#special
+endpoints.autoconfig.id=autoconfigIvms
+endpoints.beans.id=beansIvms
+endpoints.configprops.id=configpropsIvms
+endpoints.dump.id=dumpIvms
+endpoints.env.id=envIvms
+endpoints.health.id=healthIvms
+endpoints.info.id=infoIvms
+endpoints.mappings.id=mappingsIvms
+endpoints.metrics.id=metricsIvms
+endpoints.shutdown.id=shutdownIvms
+endpoints.trace.id=traceIvms
+endpoints.shutdown.enabled=false
+shell.ssh.enabled=false
+shell.telnet.enabled=false
